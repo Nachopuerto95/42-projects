@@ -1,0 +1,75 @@
+---------------	EX00 --------------------
+
+#include <stdio.h>
+int main()
+{
+    char src[5] = "hola";
+    char dest[5] = "aloh";
+    
+    ft_strcpy(dest, src);
+    printf("%s", dest);
+    return 0;
+}
+
+---------------	EX01 --------------------
+
+#include <stdio.h>
+int main()
+{
+    char src[] = "hola";
+    char dest[10];
+
+    ft_strncpy(dest, src, 4); 
+    printf("%s", dest);
+}
+
+---------------	EX02 --------------------
+
+int main()
+{
+    printf("%d", ft_str_is_alpha("hola"));
+    printf("%d", ft_str_is_alpha("ho4la"));
+    printf("%d", ft_str_is_alpha(""));
+    return 0;
+}
+
+---------------	EX07 --------------------
+
+int main()
+{
+
+    char string[] = "hola";
+    printf("%s", ft_strupcase(string));
+    return 0;
+}
+
+---------------	EX08 --------------------
+
+int main()
+{
+
+    char string[] = "HOLA";
+    printf("%s", ft_strlowcase(string));
+    return 0;
+}
+
+
+--------------- EX09 --------------------
+
+#include <stdio.h>
+int main()
+{
+
+    char string[] = "salUt, comNent tu vas ? 42mots quarante-deux;
+     cinquante+et+un";
+    printf("%s", ft_strcapitalize(string));
+    return 0;
+}
+
+---------------	EX05 --------------------
+
+
+
+
+---------------	EX06 --------------------
+

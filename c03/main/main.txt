@@ -1,0 +1,74 @@
+
+#include <stdio.h>
+int main()
+{
+    char* s1 = "hol";
+    char* s2 = "hoala";
+
+    printf("%d", strcmp(s1, s2));
+    printf("%d", ft_strcmp(s1, s2));
+    return 0;
+}
+
+-------------- EX01 ----------------
+
+#include <stdio.h>
+int main()
+{
+    char* s1 = "hol";
+
+    char* s2 = "hoala";
+    printf("%d", ft_strncmp(s1, s2, 3));
+    return 0;
+}
+
+-------------- EX02 ------------------
+
+#include <stdio.h>
+int main()
+{
+
+	char dest[20] = "HOLA";
+	char src[] = "wenas";
+	ft_strcat(dest, src);
+	printf("%s\n", dest);
+	return 0;
+}
+
+
+-------------- EX03 ------------------
+
+#include <stdio.h>
+int main()
+{
+
+	char dest[20] = "HOLA";
+	char src[] = "wenas";
+	ft_strncat(dest, src, 5);
+	printf("%s\n", dest);
+	return 0;
+}
+
+-------------- EX04 -----------------
+
+#include <string.h>
+#include <stdio.h>
+int main()
+{
+	char	str1[10] = "1111191111";
+	char	str2[] = "19";
+	printf("%s\n", strstr(str1, str2));
+	printf("%s\n", ft_strstr(str1, str2));
+	return 0;	
+}
+-------------- EX05 ------------------
+
+#include <stdio.h>
+int main()
+{
+	char dest[15] = "hello";
+	char src[] = "worldsssssssssssss";
+
+	ft_strlcat(dest, src, 15);
+	printf("%s", dest);
+}
